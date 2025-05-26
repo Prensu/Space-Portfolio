@@ -14,7 +14,7 @@ export const Navbar = () => {
       <div className="w-full h-full flex items-center justify-between m-auto px-[10px]">
         {/* Logo + Name */}
         <Link
-          href="#about-me"
+          href="/about"
           className="flex items-center"
         >
           <Image
@@ -25,7 +25,9 @@ export const Navbar = () => {
             draggable={false}
             className="cursor-pointer"
           />
-          <div className="hidden md:flex md:selffont-bold ml-[10px] text-gray-300">Prensu Dangol</div>
+          <div className="hidden md:flex font-bold ml-[10px] bg-gradient-to-r from-purple-400 via-pink-500 to-yellow-400 bg-clip-text text-transparent">
+            Prensu Dangol
+          </div>
         </Link>
 
         {/* Web Navbar */}
@@ -41,7 +43,6 @@ export const Navbar = () => {
               </Link>
             ))}
 
-            {/* Source Code */}
             <Link
               href={LINKS.sourceCode}
               target="_blank"
@@ -62,7 +63,7 @@ export const Navbar = () => {
               rel="noreferrer noopener"
               key={name}
             >
-              <Icon className="h-6 w-6 text-white" />
+              <Icon className="h-6 w-6 text-white animate-spin-slow" />
             </Link>
           ))}
         </div>
@@ -111,7 +112,7 @@ export const Navbar = () => {
                 rel="noreferrer noopener"
                 key={name}
               >
-                <Icon className="h-8 w-8 text-white" />
+                <Icon className="h-8 w-8 text-white animate-spin-slow" />
               </Link>
             ))}
           </div>

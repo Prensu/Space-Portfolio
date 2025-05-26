@@ -7,6 +7,11 @@
 .cursive {
   font-family: "Cedarville Cursive", cursive;
 }
+
+.animate-spin-slow {
+    animation: spin 3s linear infinite;
+  }
+  
 .Welcome-text {
   background: linear-gradient(
       0deg,
